@@ -61,7 +61,7 @@ inputs:
     required: false
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/shashankatporter/detekt-action:v1.0.2'
   args:
     - ${{ inputs.github_token }}
     - ${{ inputs.reviewdog_level }}
